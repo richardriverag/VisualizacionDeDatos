@@ -7,7 +7,7 @@ st.set_page_config(page_title="Historia de Reservas Hoteleras", layout="wide")
 # --- CARGA DE DATOS ---
 @st.cache_data
 def load_data():
-    return pd.read_csv("hotel_bookings_clean.csv")
+    return pd.read_csv("PEC3/hotel_bookings_clean.csv")
 
 df_original = load_data()
 
