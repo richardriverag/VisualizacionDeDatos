@@ -69,7 +69,7 @@ elif capitulo == "I: El Huésped":
     st.header("🌎 ¿De dónde vienen y cómo nos encuentran?")
     st.markdown("Antes de analizar los problemas, veamos de dónde provienen nuestros clientes reales (aquellos que no cancelaron).")
     st.divider()
-    col1, col2 = st.columns(2, vertical_alignment="center", gap = "medium")
+    col1, col2 = st.columns([3, 1], vertical_alignment="center", gap = "medium", )
     with col1:
         # 1. Preparación de los datos
         # Filtramos solo las reservas que NO fueron canceladas
@@ -141,7 +141,7 @@ elif capitulo == "I: El Huésped":
         legend_title_text='Estado de la Reserva'
     )
     st.divider()
-    col1, col2 = st.columns(2, vertical_alignment="center", gap = "medium")
+    col1, col2 = st.columns([3, 1], vertical_alignment="center", gap = "medium")
     with col1:
         # 4. Mostrar en Streamlit
         st.plotly_chart(fig_canal, use_container_width=True)
@@ -191,7 +191,7 @@ elif capitulo == "II: Cancelaciones":
     # Formatear los números encima de las barras para que usen formato de miles (ej. 15k en vez de 15000)
     fig_tiempo.update_traces(texttemplate='%{y:.2s}', textposition='outside')
     st.divider()
-    col1, col2 = st.columns(2, vertical_alignment="center", gap = "medium")
+    col1, col2 = st.columns([3, 1], vertical_alignment="center", gap = "medium")
     with col1:
         # 3. Mostrar en Streamlit
         st.plotly_chart(fig_tiempo, use_container_width=True)
@@ -237,7 +237,7 @@ elif capitulo == "II: Cancelaciones":
     )
     fig_req.update_traces(texttemplate='%{y:.2s}', textposition='outside')
 
-    col1, col2 = st.columns(2, vertical_alignment="center", gap = "medium")
+    col1, col2 = st.columns([3, 1], vertical_alignment="center", gap = "medium")
     with col1:
         # 3. Mostrar en Streamlit
         st.plotly_chart(fig_req, use_container_width=True)
@@ -292,7 +292,7 @@ elif capitulo == "III: Rentabilidad":
     fig_adr.update_layout(hovermode="x unified") # Muestra la info de ambas líneas al pasar el ratón
 
     st.divider()
-    col1, col2 = st.columns(2, vertical_alignment="center", gap = "medium")
+    col1, col2 = st.columns([3, 1], vertical_alignment="center", gap = "medium")
     with col1:
         # 3. Mostrar en Streamlit
         st.plotly_chart(fig_adr, use_container_width=True)
@@ -338,7 +338,7 @@ elif capitulo == "III: Rentabilidad":
     # Formateamos el texto interior para que lleve el símbolo de porcentaje
     fig_deposito.update_traces(texttemplate='%{y:.1f}%')
     st.divider()
-    col1, col2 = st.columns(2, vertical_alignment="center", gap = "medium")
+    col1, col2 = st.columns([3, 1], vertical_alignment="center", gap = "medium")
     with col1:
         # 4. Mostrar en Streamlit
         st.plotly_chart(fig_deposito, use_container_width=True)
