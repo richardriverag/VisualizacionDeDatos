@@ -58,7 +58,8 @@ df_filtered = df[mask]
 # -----------------------------------------------------------------------------
 # Cuerpo Principal del Dashboard
 # -----------------------------------------------------------------------------
-st.title(":blue[_UOC - Visualización de Datos - Richard Rivera_]",text_alignment="center")
+st.title(":blue[_UOC - Visualización de Datos_]",text_alignment="center")
+st.title(":blue[_Práctica Parte 2 - Richard Rivera_]",text_alignment="center")
 st.title("📊 Evolución Global y Regional de la Cuota de Mercado de Sistemas Operativos (2009-2026)")
 st.markdown("""
 Este dashboard interactivo analiza la evolución de la cuota de mercado de los diferentes sistemas operativos a nivel mundial y regional. 
