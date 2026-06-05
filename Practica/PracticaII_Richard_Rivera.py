@@ -247,7 +247,7 @@ with tab8:
 st.markdown("---")
 footer_html = """
 <div style="text-align: center; color: gray; font-size: small;">
-    <p><b>Proyecto de Visualización de Datos</b> | Autor: Richard Rivera</p>
+    <p><b>Proyecto de Visualización de Datos</b> | Autor: <a href= "https://richardriverag.github.io">Richard Rivera</a></p>
     <p>Desarrollado con Streamlit y Plotly | Datos: <a href= "https://gs.statcounter.com">StatCounter</a></p>
     <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank">
         <img alt="Licencia Creative Commons" style="border-width:0; margin-bottom: 5px;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
